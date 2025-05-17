@@ -7,8 +7,13 @@ from modules import electrolyzer  # only import modules that are ready
 #st.sidebar.markdown("### 👋 Welcome, Engineer!")
 #st.sidebar.markdown("Explore sustainable hydrogen design tools 🌱")
 import sys
+import os
+
 import streamlit as st
 import sys
+import streamlit as st
+import sys
+import os
 
 st.write("Python path:", sys.path)
 
