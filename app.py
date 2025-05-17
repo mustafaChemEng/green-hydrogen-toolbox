@@ -1,43 +1,23 @@
 import streamlit as st
+import os
+import sys
+
 from modules import water_cost
 from modules import hydrogen_tank
 from modules import renewable_energy
-from modules import electrolyzer  
-from modules import renewable_energy
-# only import modules that are ready
-#st.sidebar.image("assets/images/logo.png", use_column_width=True)
-#st.sidebar.markdown("### 👋 Welcome, Engineer!")
-#st.sidebar.markdown("Explore sustainable hydrogen design tools 🌱")
-import sys
-import os
-
-import streamlit as st
-import sys
-import streamlit as st
-import sys
-import os
-
-import streamlit as st
-import os
-import sys
+from modules import electrolyzer
 
 st.set_page_config(page_title="Green Hydrogen Toolbox", layout="wide")
 
-# The rest of your code
-
-st.write("Python path:", sys.path)
-
-
+# Optional Debug Info
 st.write("Python path:", sys.path)
 st.write("Modules folder exists:", os.path.isdir("modules"))
 st.write("Files in modules folder:", os.listdir("modules") if os.path.isdir("modules") else "No modules folder found")
 
-
-#st.set_page_config(page_title="Green Hydrogen Toolbox", layout="wide")
 st.title("🌱 Green Hydrogen Engineering Toolbox")
 st.markdown("Empowering sustainable hydrogen production with chemical engineering + Python.")
 
-st.sidebar.title("🛠️Green H2 Toolbox")
+st.sidebar.title("🛠️ Green H₂ Toolbox")
 page = st.sidebar.selectbox("📂 Choose Module", [
     "Renewable Energy Simulation",
     "Electrolyzer Estimator",
@@ -54,9 +34,6 @@ elif page == "Water Cost Comparison":
 elif page == "Hydrogen Tank Design (Coming)":
     hydrogen_tank.run()
 
-
-
-#Copy Right
 st.markdown("---")
 st.markdown(
     "<div style='text-align: center; color: gray;'>"
