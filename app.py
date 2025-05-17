@@ -2,7 +2,9 @@ import streamlit as st
 from modules import water_cost
 from modules import hydrogen_tank
 from modules import renewable_energy
-from modules import electrolyzer  # only import modules that are ready
+from modules import electrolyzer  
+from modules import renewable_energy
+# only import modules that are ready
 #st.sidebar.image("assets/images/logo.png", use_column_width=True)
 #st.sidebar.markdown("### 👋 Welcome, Engineer!")
 #st.sidebar.markdown("Explore sustainable hydrogen design tools 🌱")
