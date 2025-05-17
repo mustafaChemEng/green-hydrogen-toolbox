@@ -6,6 +6,11 @@ from modules import electrolyzer  # only import modules that are ready
 #st.sidebar.image("assets/images/logo.png", use_column_width=True)
 #st.sidebar.markdown("### 👋 Welcome, Engineer!")
 #st.sidebar.markdown("Explore sustainable hydrogen design tools 🌱")
+import sys
+import streamlit as st
+import sys
+
+st.write("Python path:", sys.path)
 
 
 st.write("Python path:", sys.path)
