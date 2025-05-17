@@ -10,9 +10,9 @@ from modules import electrolyzer
 st.set_page_config(page_title="Green Hydrogen Toolbox", layout="wide")
 
 # Optional Debug Info
-st.write("Python path:", sys.path)
-st.write("Modules folder exists:", os.path.isdir("modules"))
-st.write("Files in modules folder:", os.listdir("modules") if os.path.isdir("modules") else "No modules folder found")
+#st.write("Python path:", sys.path)
+#st.write("Modules folder exists:", os.path.isdir("modules"))
+#st.write("Files in modules folder:", os.listdir("modules") if os.path.isdir("modules") else "No modules folder found")
 
 st.title("🌱 Green Hydrogen Engineering Toolbox")
 st.markdown("Empowering sustainable hydrogen production with chemical engineering + Python.")
